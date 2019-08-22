@@ -6,7 +6,7 @@ FantasyGold docker image
 
 FantasyGold is a new blockchain based on Bitcoin Core that integrates Ethereum based smart contracts. It implements an extensible design which is capable of adding more VMs, enabled primarily through the Account Abstraction Layer, which allows for an account based virtual machine to function on a UTXO based blockchain.
 
-Please refer to : https://github.com/fantasygold/fantasygold
+Please refer to : https://github.com/fantasygold/fantasygold-core
 
 ## Dockerfile
 

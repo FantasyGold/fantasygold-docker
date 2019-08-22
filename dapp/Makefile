@@ -1,4 +1,4 @@
 .PHONY: image
 
 image:
-	docker build . -t hayeah/fantasygoldportal
+	docker build . -t fantasygold/fantasygoldportal

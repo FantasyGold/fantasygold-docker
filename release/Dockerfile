@@ -7,7 +7,7 @@ RUN set -ex \
 
 # install fantasygold binaries
 RUN set -ex \
-    && echo `curl -s https://api.github.com/repos/fantasygold/fantasygold/releases/latest | jq -r ".assets[] | select(.name | test(\"Linux64.tar.gz\")) | .browser_download_url"` > /tmp/fantasygold_url \
+    && echo `curl -s https://api.github.com/repos/fantasygold/fantasygold-core/releases/latest | jq -r ".assets[] | select(.name | test(\"Linux64.tar.gz\")) | .browser_download_url"` > /tmp/fantasygold_url \
     && FGC_URL=`cat /tmp/fantasygold_url` \
     && FGC_DIST=$(basename $FGC_URL) \
     && wget -O $FGC_DIST $FGC_URL \
