@@ -11,9 +11,9 @@ RUN wget https://github.com/mattn/goreman/releases/download/v0.0.10/goreman_linu
   rm goreman_linux_amd64.zip
 
 ENV FGC_RELEASE 2.0.0
-ENV FGC_RELEASE_TAR fantasygold-${FGC_RELEASE}-Linux64.tar.gz
+ENV FGC_RELEASE_TAR FantasyGoldCore-v${FGC_RELEASE}-Linux64.tar.gz
 
-RUN wget https://github.com/fantasygold/fantasygold-core/releases/download/-v${FGC_RELEASE}/${FGC_RELEASE_TAR} && \
+RUN wget https://github.com/fantasygold/fantasygold-core/releases/download/${FGC_RELEASE}/${FGC_RELEASE_TAR} && \
   tar -xf $FGC_RELEASE_TAR -C /usr/local --strip-components=1 --exclude=*-qt --exclude=test_fantasygold --exclude=fantasygold-tx && \
   rm $FGC_RELEASE_TAR
 
